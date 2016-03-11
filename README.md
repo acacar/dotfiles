@@ -1,1 +1,1 @@
-# dotstuff
+# dotfiles
