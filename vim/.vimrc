@@ -5,7 +5,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'frankier/neovim-colors-solarized-truecolor-only'
+Plugin 'altercation/vim-colors-solarized'
 Plugin 'tpope/vim-surround'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
@@ -79,7 +79,7 @@ set sessionoptions-=options
 inoremap <C-U> <C-G>u<C-U>
 
 let g:airline_powerline_fonts = 1
-let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+"let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 set background=dark
 colorscheme  solarized
 let g:airline_theme='powerlineish'
