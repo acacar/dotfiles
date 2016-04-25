@@ -10,5 +10,11 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-alias vim=nvim
 # Customize to your needs...
+alias vim='emacsclient -t'
+alias vi='emacsclient -t'
+alias e='emacsclient -t'
+alias ec='emacsclient -c'
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+export TERM=xterm-256color
