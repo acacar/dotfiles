@@ -37,6 +37,7 @@ values."
      ;; version-control
      themes-megapack
      osx
+     semantic
      c-c++
      clojure
      ess
@@ -127,7 +128,7 @@ values."
    ;; Default font. `powerline-scale' allows to quickly tweak the mode-line
    ;; size to make separators look not too crappy.
    dotspacemacs-default-font '("Source Code Pro"
-                               :size 16
+                               :size 18
                                :weight normal
                                :width normal
                                :powerline-scale 1.1)
@@ -282,7 +283,9 @@ you should place your code here."
   (require 'turkish)
   (spacemacs/declare-prefix "L" "language")
   (evil-leader/set-key "LT" 'turkish-mode)
-  (evil-leader/set-key "Lt" 'turkish-toggle-accent) 
+  (evil-leader/set-key "Lt" 'turkish-toggle-accent)
+  (setq-default dotspacemacs-configuration-layers
+                '((c-c++ :variables c-c++-enable-clang-support t)))
 )
 
 ;; Do not write anything past this comment. This is where Emacs will
