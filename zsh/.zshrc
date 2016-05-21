@@ -11,7 +11,8 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
-alias vim='emacsclient -t'
+alias ovim='vim'
+alias vim='nvim'
 alias vi='emacsclient -t'
 alias e='emacsclient -t'
 alias ec='emacsclient -c'

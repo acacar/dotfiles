@@ -12,6 +12,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'benekastah/neomake'
 Plugin 'sickill/vim-monokai'
 Plugin 'vim-airline/vim-airline'
+Plugin 'jnurmine/Zenburn'
 Plugin 'vim-airline/vim-airline-themes'
 call vundle#end()
 
@@ -81,7 +82,8 @@ inoremap <C-U> <C-G>u<C-U>
 let g:airline_powerline_fonts = 1
 "let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 set background=dark
-colorscheme  solarized
+"colorscheme  solarized
+colors zenburn
 let g:airline_theme='powerlineish'
 
 let python_highlight_all = 1
