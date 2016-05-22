@@ -89,3 +89,6 @@ let g:airline_theme='powerlineish'
 let python_highlight_all = 1
 
 let mapleader="\\"
+
+" Allow saving of files as sudo when I forgot to start vim using sudo.
+cmap w!! w !sudo tee > /dev/null %
