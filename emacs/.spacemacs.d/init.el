@@ -60,7 +60,7 @@ values."
    ;; wrapped in a layer. If you need some configuration for these
    ;; packages, then consider creating a layer. You can also put the
    ;; configuration in `dotspacemacs/user-config'.
-   dotspacemacs-additional-packages '(turkish)
+   dotspacemacs-additional-packages '(turkish notmuch)
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '()
    ;; If non-nil spacemacs will delete any orphan packages, i.e. packages that
@@ -286,7 +286,17 @@ you should place your code here."
   (evil-leader/set-key "Lt" 'turkish-toggle-accent)
   (setq-default dotspacemacs-configuration-layers
                 '((c-c++ :variables c-c++-enable-clang-support t)))
-)
+
+  (require 'notmuch)
+  (setq smtpmail-starttls-credentials '(("retval.net" 587 nil nil))
+        smtpmail-auth-credentials (expand-file-name "~/.authinfo")
+        smtpmail-default-smtp-server "mail.retval.net"
+        smtpmail-smtp-server "mail.retval.net"
+        smtpmail-smtp-service 587)
+  (require 'smtpmail)
+  (setq message-send-mail-function 'smtpmail-send-it)
+  (require 'starttls)
+  )
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
