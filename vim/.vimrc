@@ -84,7 +84,7 @@ let g:airline_powerline_fonts = 1
 set background=dark
 "colorscheme  solarized
 colors zenburn
-let g:airline_theme='powerlineish'
+" let g:airline_theme='powerlineish'
 
 let python_highlight_all = 1
 
