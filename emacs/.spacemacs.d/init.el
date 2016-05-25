@@ -292,7 +292,9 @@ you should place your code here."
         smtpmail-auth-credentials (expand-file-name "~/.authinfo")
         smtpmail-default-smtp-server "mail.retval.net"
         smtpmail-smtp-server "mail.retval.net"
-        smtpmail-smtp-service 587)
+        smtpmail-smtp-service 587
+	notmuch-command "~/bin/remote-notmuch.sh"
+	notmuch-fcc-dirs nil)
   (require 'smtpmail)
   (setq message-send-mail-function 'smtpmail-send-it)
   (require 'starttls)
